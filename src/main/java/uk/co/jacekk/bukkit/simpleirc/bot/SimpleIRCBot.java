@@ -147,7 +147,7 @@ public class SimpleIRCBot extends PircBot implements Listener {
 			
 			String playerName = (plugin.ircAliases.containsKey(sender)) ? plugin.ircAliases.get(sender) : sender;
 			
-			plugin.server.broadcastMessage(ChatColor.YELLOW + playerName + " has joined the chat");
+			plugin.server.broadcastMessage(ChatColor.YELLOW + playerName + " 加入了聊天");
 		}
 	}
 	
@@ -157,7 +157,7 @@ public class SimpleIRCBot extends PircBot implements Listener {
 			String senderLower = sender.toLowerCase();
 			String playerName = (plugin.ircAliases.containsKey(senderLower)) ? plugin.ircAliases.get(senderLower) : sender; 
 			
-			plugin.server.broadcastMessage(ChatColor.YELLOW + playerName + " has left the chat");
+			plugin.server.broadcastMessage(ChatColor.YELLOW + playerName + " 离开了聊天");
 		}
 	}
 	
@@ -167,7 +167,7 @@ public class SimpleIRCBot extends PircBot implements Listener {
 			String senderLower = sourceNick.toLowerCase();
 			String playerName = (plugin.ircAliases.containsKey(senderLower)) ? plugin.ircAliases.get(senderLower) : sourceNick; 
 			
-			plugin.server.broadcastMessage(ChatColor.YELLOW + playerName + " has left the chat");
+			plugin.server.broadcastMessage(ChatColor.YELLOW + playerName + " 离开了聊天");
 		}
 	}
 	
@@ -179,7 +179,7 @@ public class SimpleIRCBot extends PircBot implements Listener {
 			String senderLower = recipientNick.toLowerCase();
 			String playerName = (plugin.ircAliases.containsKey(senderLower)) ? plugin.ircAliases.get(senderLower) : recipientNick; 
 			
-			plugin.server.broadcastMessage(ChatColor.YELLOW + playerName + " has left the chat");
+			plugin.server.broadcastMessage(ChatColor.YELLOW + playerName + " 离开了聊天");
 		}
 	}
 	

@@ -58,7 +58,7 @@ public class IRCCommandSender extends BaseObject<SimpleIRC> implements RemoteCon
 	@Override
 	public void sendMessage(String message){
 		if (this.messageTarget != null){
-			this.bot.sendNotice(this.messageTarget, ChatColorHelper.convertMCtoIRC(message));
+			this.bot.sendMessage(this.messageTarget, ChatColorHelper.convertMCtoIRC(message));
 		}
 	}
 	
